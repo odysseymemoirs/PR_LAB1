@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+    <title>LAB2</title>
+</head>
+<style>
+    .marginTop {
+        margin-top: 30px;
+    }
+    .btnStyle {
+      margin-left: 70px;
+      margin-top: -40px;
+    }
+
+</style>
+
+<body>
+    <nav>
+        <div class="nav-wrapper  ">
+           
+        <a href="#" class="brand-logo ">LAB2</a>
+
+        </div>
+      </nav>
+
+    <div class="container valign-wrapper marginTop">
+            
+                <form id='mainForm' class="col s5">
+                  <div class="row">
+                    <div class="input-field col s5">
+                      <input value='SMTP.Office365.com'  id="host" type="text" class="validate">
+                      <label for="host">Host</label>
+                    </div>
+                    <div class="input-field col s5">
+                      <input value='587' id="port" type="text" class="validate">
+                      <label for="port">Port</label>
+                    </div>
+    
+    
+                    <div class="input-field col s5">
+                      <input value='' id="user" type="email" class="validate">
+                      <label for="user">User</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <input value='' id="pass" type="password" class="validate">
+                        <label for="password">Pass</label>
+                      </div>
+                      <div class="input-field col s5">
+                        <input value='' id="from" type="email" class="validate">
+                        <label for="from">From</label>
+                      </div>
+                      <div class="input-field col s5">
+                        <input value='' id="to" type="email" class="validate">
+                        <label for="to">To</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s5">
+                      <textarea id="msgSubject" class="materialize-textarea"></textarea>
+                      <label for="msgSubject">Тема</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s5">
+                      <textarea id="textarea" class="materialize-textarea"></textarea>
+                      <label for="textarea">Сообщение</label>
+                    </div>
+                    <button id='sendBtn' class="btn btnStyle waves-effect waves-light" type="submit" name="action">Отправить
+                      <i class="material-icons right"></i>
+                    </button>
+                  </div>
+                  
+               
+                  
+                </form>
+     
+           <ul  id='emailRecieveFrorm' class="collection container with-header col s10">
+
+                  </ul>
+   
+
+
+    </div>
+
+    <script src="./client.js"></script>
+</body>
+</html>
